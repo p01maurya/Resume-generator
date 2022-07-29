@@ -1,0 +1,28 @@
+/* #resume-form{
+    display: none;
+} */
+
+.myimg{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+.background{
+    background-color: bisque;
+}
+
+#resume-template{
+    display: none;
+}
+
+#topBG{
+    background-color: #628290;
+}
+
+#linkText{
+    font-weight: 800;
+    font-family: Poppins;
+    font-size: larger;
+}
