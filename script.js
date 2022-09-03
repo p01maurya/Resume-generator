@@ -1,3 +1,5 @@
+let personName = "";
+
 function addNewWEField()
 {
     // console.log("Hello");
@@ -39,6 +41,7 @@ function addNewAQField()
 
 function generateResume(){
     let nameField = document.getElementById("nameField").value;
+    personName = nameField;
     let nameT1 = document.getElementById("nameT1");
     nameT1.innerHTML = nameField;
 
