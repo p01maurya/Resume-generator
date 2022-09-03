@@ -96,5 +96,19 @@ function generateResume(){
 
 //Print Resume
 function printResume(){
-    window.print();
+    const element = document.querySelector('body');
+    const opt = {
+        filename : `${personName.split(' ')[0]}-Resume.pdf`,
+        margin:0,
+        image:{
+            type: 'PNG',
+            quality: 1
+        },
+        jsPDF: {
+            format: 'A4',
+            orientation: 'portrait'
+        },
+    }
+    document.querySelector('.print-btn').style.display ='none';
+    html2pdf().set(opt).from(element).save();
 }
